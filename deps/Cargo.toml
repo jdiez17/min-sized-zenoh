@@ -1,0 +1,16 @@
+[package]
+name = "deps"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = "1.43.0"
+zenoh = "1.2.1"
+
+[lib]
+crate-type = ["dylib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+panic = "abort"

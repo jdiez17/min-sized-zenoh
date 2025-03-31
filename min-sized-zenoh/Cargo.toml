@@ -1,0 +1,10 @@
+[package]
+name = "min-sized-zenoh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+deps = { version = "0.1.0", path = "../deps" }
+
+[profile.release]
+lto = true

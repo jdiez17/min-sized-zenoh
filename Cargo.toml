@@ -1,0 +1,12 @@
+[workspace]
+
+members = ["min-sized-zenoh", "deps"]
+
+[build]
+rustflags = ["-Cprefer-dynamic", "-Zlocation-detail=none", "-C link-arg=-s", "-C link-arg=-Wl,--gc-sections", "-Zcross-inline=no"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+strip = true
+#panic = "abort"
