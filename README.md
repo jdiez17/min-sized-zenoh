@@ -47,7 +47,7 @@ Now apply it to the original binary and check that it has the same `sha256sum`:
     bspatch: usage: bspatch oldfile newfile patchfile
     $ bspatch target/release/min-sized-zenoh.orig min-sized-zenoh.new patch
     $ sha256sum min-sized-zenoh.new target/release/min-sized-zenoh
-cd65933cbc249728ca1abf11034b431d516c39adf4fc744e0c39fe1070ef9479  min-sized-zenoh.new
-cd65933cbc249728ca1abf11034b431d516c39adf4fc744e0c39fe1070ef9479  target/release/min-sized-zenoh
+    cd65933cbc249728ca1abf11034b431d516c39adf4fc744e0c39fe1070ef9479  min-sized-zenoh.new
+    cd65933cbc249728ca1abf11034b431d516c39adf4fc744e0c39fe1070ef9479  target/release/min-sized-zenoh
 
 Feierabend! 🎉 
